@@ -24,7 +24,6 @@ contract('Marketplace', (accounts) => {
     marketplace = await Marketplace.new(USDC.address);
     console.log('deployed');
     await marketplace.addWhiteList(accounts[1]);
-    await marketplace.listToken(airplane1.address, '1');
     await airplane1.mint('5');
     await airplane2.mint('5');
     await airplane3.mint('5');

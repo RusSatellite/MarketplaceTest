@@ -151,7 +151,7 @@ contract Marketplace is ReentrancyGuard, Ownable {
     }
 
 
-    function addWhiteLilst(address wallet) external onlyOwner {
+    function addWhiteList(address wallet) external onlyOwner {
         tokenWhiteList.add(wallet);
     }
 
